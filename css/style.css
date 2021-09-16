@@ -188,4 +188,43 @@ body{
     top: 0; left: 0;
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.3);
 }
-
+.home .home-slider .item{
+    position: relative;
+}
+.item img{
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+.item .content{
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translateY(-50%);
+}
+.content h3{
+    color: #fff;
+    text-shadow: 0 .3rem .5rem blueviolet;
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+.content p{
+    color: #fff;
+    text-shadow: 0 .3rem .5rem rgb(2, 0, 3);
+    font-size: 2rem;
+    padding: 2rem 0;
+    width: 50rem;
+}
+.btn{
+    height: 4rem;
+    width: 14rem;
+    background: var(--blue);
+    color:#fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+    opacity: .9;
+}
