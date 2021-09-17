@@ -177,6 +177,7 @@ body{
 .icons a:hover{
     color: yellow;
 }
+ 
 #menu{
     font-size: 2rem;
     color: #fff;
@@ -190,6 +191,7 @@ body{
 }
 .home .home-slider .item{
     position: relative;
+    transition: all 750ms ease;
 }
 .item img{
     height: 100vh;
@@ -227,4 +229,36 @@ body{
 .btn:hover{
     letter-spacing: .2rem;
     opacity: .9;
+}
+
+#prev, #next{
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    font-size: 3rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+    color: #000;
+}
+#prev{
+    left: 10px;
+}
+#next{
+    right: 10px;
+}
+#prev:hover, #next:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+}
+
+
+/* container with elements and contents */
+
+.items{
+    display: none;
 }
